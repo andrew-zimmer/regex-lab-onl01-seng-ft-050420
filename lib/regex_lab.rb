@@ -14,7 +14,7 @@ def first_word_capitalized_and_ends_with_punctuation?(text)
   array = text.scan(/^[A-Z]|\W$/)
   if array[0] == array[0].upcase
     true 
-  else 
+  elsif array[0] == array[0].downcase
     false 
   end 
 end
