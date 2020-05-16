@@ -11,7 +11,7 @@ def words_five_letters_long(text)
 end
 
 def first_word_capitalized_and_ends_with_punctuation?(text)
-  array = text.scan(/^[A-Z]|\W$/)
+  array = text.scan(/^[A-Z]|\W$/)i
   if array[0] == array[0].upcase
     true 
   elsif array[0] == array[0].downcase
