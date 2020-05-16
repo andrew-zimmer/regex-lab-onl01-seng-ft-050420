@@ -16,6 +16,8 @@ def first_word_capitalized_and_ends_with_punctuation?(text)
     true 
   elsif array[0] == array[0].downcase
     false 
+  else 
+    false
   end 
 end
 
